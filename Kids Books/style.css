@@ -1,0 +1,1187 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Righteous;
+  src: url(assest/font/Righteous-Regular.ttf);
+}
+#fruits {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IW7LkHJOTp3Xivo_lB1nMNpsmFGAwncFkg&usqp=CAU);
+}
+body {
+  height: auto;
+  width: max-content;
+  margin-left: 20vw;
+  margin: auto;
+  background-size: cover;
+  background-image: url(data:image/jpeg;base64,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);
+}
+.hero {
+  margin: 50px;
+  width: auto;
+  height: auto;
+  border: 8px solid aliceblue;
+  text-align: center;
+}
+.one {
+  font-family: Righteous;
+  padding: 100px;
+  font-size: 30px;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border-bottom: 5px solid #8e2de2;
+  background-color: #8e2de2;
+  color: rgb(251, 203, 11);
+}
+.two {
+  padding: 10px;
+  margin-top: 5px;
+  font-family: Poppins-ExtraBold;
+  font-weight: bold;
+  font-size: 60px;
+  color: red;
+}
+
+.three {
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 70px;
+  color: #eea11d;
+  font-family: Sweet_Cherry_Free;
+}
+.hero:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+@font-face {
+  font-family: Sweet_Cherry_Free;
+  src: url(assest/font/Sweet_Cherry_Free.ttf);
+}
+
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url(./assest/font/Poppins-ExtraBold.ttf);
+}
+
+@media (max-width: 250px) and (min-width: 400px) {
+  .hero {
+    width: 400px;
+    height: auto ;
+  }
+}
+
+@media (max-width: 250px) and (min-width: 400px) {
+  #fruits {
+    width: 400px;
+    height: auto ;
+  }
+}
+
+.zero h1 {
+  margin-top: 40px;
+  font-family: Righteous;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(243, 107, 243);
+  text-shadow: 2px 2px purple;
+}
+.zero a {
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: black;
+  color: #ff9800;
+  border-radius: 50%;
+}
+a:hover {
+  background-color: #fff5c2;
+  color: black;
+}
+
+#A {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#A img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.A {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for1 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.APPLE {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+}
+
+#B {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#B img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.B {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for2 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.BALL {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+}
+
+#C {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#C img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.C {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for3 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.CAT {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+#D {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#D img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.D {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for4 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.DOG {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+#E {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+#E img {
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+
+.E {
+  font-family: Poppins-ExtraBold;
+  font-size: 90px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for5 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.ELEPHANT {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 80px;
+  font-weight: bold;
+  color: gray;
+}
+
+#F {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#F img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.F {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for6 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.FISH {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(202, 172, 23);
+}
+
+#G {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#G img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.G {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for7 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.GIRAFFE {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(245, 182, 66);
+}
+
+#H {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#H img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.H {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for8 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.HEN {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(254, 184, 52);
+}
+
+#I {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#I img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.I {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for9 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.ICE_CREAM {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 80px;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+#J {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#J img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.J {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for10 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.JUG {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: skyblue;
+}
+#K {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#K img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.K {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for11 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.KITE {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(12, 199, 12);
+}
+
+#L {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#L img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.L {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for12 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.LION {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(199, 124, 59);
+}
+
+#M {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#M img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.M {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for13 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.MONKEY {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(241, 85, 85);
+}
+
+#N {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#N img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.N {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for14 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.NEST {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(217, 25, 25);
+}
+
+#O {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#O img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.O {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for15 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.ORANGE {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: orange;
+}
+#P {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#P img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.P {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for16 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.PARROT {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(40, 205, 40);
+}
+
+#Q {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#Q img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.Q {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for17 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.QUEEN {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(236, 236, 94);
+}
+
+#R {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#R img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.R {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for18 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.RABBIT {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(97, 66, 66);
+}
+
+#S {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#S img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.S {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for19{
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.SUN {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(222, 183, 74);
+}
+
+#T {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#T img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.T {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for20 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.TREE {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(83, 249, 83);
+}
+
+#U {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#U img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.U {
+  font-family: Poppins-ExtraBold;
+  font-size: 90px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for21 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.UMBRELLA {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(170, 44, 86);
+}
+
+#V {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#V img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.V {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for22 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.VAN {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(242, 223, 50);
+}
+
+#W {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#W img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.W {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for23 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.WATCh {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(209, 182, 29);
+}
+
+#X {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#X img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.X {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for24 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.X_RAY {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgba(53, 53, 185, 0.58);
+}
+
+#Y {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#Y img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.Y {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for25 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.YOYO {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(81, 159, 192);
+}
+
+#Z {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  width: 900px;
+  box-shadow: 2px 2px 3px 3px darkgray;
+  margin-left: 16vw;
+  border-radius: 30px;
+}
+
+#Z img {
+  width: 170px;
+  height: 170px;
+  float: right;
+}
+
+.Z {
+  font-family: Poppins-ExtraBold;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  padding-left: 60px;
+}
+
+.for26 {
+  font-family: Righteous;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.ZEBRA {
+  padding-right: 120px;
+  font-family: Sweet_Cherry_Free;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(139, 129, 129);
+}
+
+
